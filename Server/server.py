@@ -16,8 +16,8 @@ port = 2023
 print(f'server address : {ip}:{port}')
 
 authorizer = DummyAuthorizer()
-authorizer.add_user(user_name, user_pswd, "./result", perm="elradfmw")
-authorizer.add_anonymous("./result", perm="elradfmw")
+authorizer.add_user(user_name, user_pswd, "./recvFiles", perm="elradfmw")
+authorizer.add_anonymous("./recvFiles", perm="elradfmw")
 
 handler = FTPHandler
 handler.authorizer = authorizer
